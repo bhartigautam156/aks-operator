@@ -141,7 +141,7 @@ var _ = BeforeSuite(func() {
 				"add",
 				"--force-update",
 				"rancher-latest",
-				fmt.Sprintf(e2eCfg.RancherChartURL),
+				fmt.Sprintf("%s", e2eCfg.RancherChartURL),
 			)).To(Succeed())
 		})
 
